@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Poppins', sans-serif; */    
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+ 
+section{
+    padding: 100px;
+}
+.banner{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: url(banner.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #585858;
+    background-blend-mode: darken;
+}
+
+.banner h2{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.banner h2 span{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.banner h3{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn{
+    position: relative;
+    background: #2196f3;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+header{
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.4s;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: .5px 20px rgba(0, 0, 0, .1);
+}
+
+header .logo{
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+header.sticky .logo{
+    color: #111;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+header ul li a:hover{
+    color: #3586ff;
+}
+header.sticky ul li a{    
+    color: #111;
+}
+header.sticky ul li a:hover{
+    color: #3586ff;
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+.heading h2{
+    font-weight: 600;
+    font-size: 30px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.contentbx{
+    padding-right: 30px;
+}
+.contentbx h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.w50{
+    min-width: 50%;
+}
+img{
+    max-width: 100%;
+}
+
+.products{
+   background: #111; 
+}
+.heading.white{
+    color: #fff;
+}
+
+.products .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.products .content .productsbx{
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: .5s;
+}
+
+.products .content .productsbx:hover{
+    background: #2196f3;
+}
+
+.products .content .productsbx img{
+    max-width: 80px;
+    filter: invert(1);
+}
+
+.products .content .productsbx h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.work .content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.work .content .workbx{
+    width: 50%;
+    padding: 20px;
+}
+
+.work .content .workbx img{
+    max-width: 100%;
+}
+
+.contact{
+    background: #111;
+}
+
+.formbx{
+    min-width: 60%;
+}
+
+.formbx form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formbx form h3, 
+.contactinfo h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.formbx form input,
+.formbx form textarea{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    background: #222;
+    border: none;
+    outline: none;
+    color: #fff;
+    resize: none;
+}
+.formbx form textarea{
+    min-height: 200px;
+}
+.formbx form input::placeholder,
+.formbx form textarea::placeholder{
+    color: #999;
+}
+.formbx form input[type="submit"]{
+    max-width: 100px;
+    background: #2196f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.formbx form input[type="submit"]:hover{
+    background: #0f3f88;
+}
+.contactinfo{
+    min-width: 40%;
+}
+.contactinfobx{
+    position: relative;
+}
+.contactinfobx .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contactinfobx .box .text{
+    display: flex;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.contactinfobx .box .text h3{
+    font-weight: 500;
+    color: #2196f3;
+    margin-bottom: 0;
+}
+
+/* footer */
+
+
+footer{
+    font-family: 'Lobster', cursive;
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social_icon, footer .menu{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.social_icon li, footer .menu li{
+    list-style: none;
+}
+
+.social_icon li a{
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.social_icon li a:hover{
+    transform: translateY(-10px);
+}
+
+footer .menu li a{
+    font-size: 1.4em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+footer .menu li a:hover{
+    opacity: 1;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2{
+    z-index: 999;
+    opacity: .5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3{
+    z-index: 1000;
+    opacity: .2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4{
+    z-index: 999;
+    opacity: .7;
+    bottom: 29px;
+    animation: animateWave_02 3s linear infinite;
+}
+
+
+@keyframes animateWave{
+    0%
+    {
+        background-position-x: 1000px;
+    }
+
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02{
+    0%
+    {
+        background-position-x: 0px;
+    }
+
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+
+.btn:hover{
+    background: #0f3f88;
+}
